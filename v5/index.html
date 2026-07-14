@@ -104,41 +104,51 @@
         </ul>
       </div>
 
-      <!-- RIGHT: portrait card -->
-      <aside class="hero__portrait" data-reveal aria-label="Practitioner introduction">
-        <!-- Replace the SVG below with a real photograph of Alice. -->
+      <!-- RIGHT: abstract dawn composition (no people, no interiors) -->
+      <aside class="hero__portrait" data-reveal aria-hidden="true">
         <figure class="pcard">
           <div class="pcard__frame">
-            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="pcard__art">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" class="pcard__art">
               <defs>
-                <linearGradient id="bg5" x1="0" x2="1" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#E7DFC9"/>
+                <linearGradient id="dawn5" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#F5EEDA"/>
+                  <stop offset="55%" stop-color="#E7DFC9"/>
                   <stop offset="100%" stop-color="#C4CDB3"/>
                 </linearGradient>
-                <linearGradient id="fig5" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#2C4838"/>
-                  <stop offset="100%" stop-color="#1A2E24"/>
+                <linearGradient id="arc5a" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0%" stop-color="#6E7E6A"/>
+                  <stop offset="100%" stop-color="#2C4838"/>
                 </linearGradient>
+                <radialGradient id="sun5" cx="0.5" cy="0.42" r="0.4">
+                  <stop offset="0%" stop-color="#E4B99F" stop-opacity=".9"/>
+                  <stop offset="100%" stop-color="#E4B99F" stop-opacity="0"/>
+                </radialGradient>
               </defs>
-              <rect width="400" height="500" fill="url(#bg5)"/>
-              <!-- soft window light -->
-              <path d="M0 0 L 240 0 L 40 500 L 0 500 Z" fill="#F5EEDA" opacity=".35"/>
-              <!-- abstract shoulders/head -->
-              <path d="M60 500 C 60 380 110 320 200 320 C 290 320 340 380 340 500 Z" fill="url(#fig5)"/>
-              <circle cx="200" cy="240" r="66" fill="#E4CDB3"/>
-              <path d="M138 232 C 130 180 155 140 200 140 C 245 140 270 180 262 232 C 262 210 240 200 200 200 C 160 200 138 210 138 232 Z" fill="#1F2E24"/>
-              <!-- signature line -->
-              <path d="M120 460 q 20 -10 40 0 t 40 0 t 40 0 t 40 0" stroke="#E7DFC9" stroke-width="1.2" fill="none" opacity=".6"/>
+              <rect width="400" height="500" fill="url(#dawn5)"/>
+              <rect width="400" height="500" fill="url(#sun5)"/>
+              <!-- rising sun -->
+              <circle cx="200" cy="210" r="58" fill="#C67552" opacity=".85"/>
+              <!-- layered horizon arcs, like a slow sunrise -->
+              <path d="M-40 320 Q 200 240 440 320 L 440 500 L -40 500 Z" fill="#A8B39A" opacity=".55"/>
+              <path d="M-40 370 Q 200 295 440 370 L 440 500 L -40 500 Z" fill="url(#arc5a)" opacity=".75"/>
+              <path d="M-40 425 Q 200 355 440 425 L 440 500 L -40 500 Z" fill="#1F3A2E"/>
+              <!-- fine contour lines -->
+              <g stroke="#F5EEDA" stroke-width="1" fill="none" opacity=".35">
+                <path d="M-40 345 Q 200 268 440 345"/>
+                <path d="M-40 396 Q 200 322 440 396"/>
+                <path d="M-40 452 Q 200 384 440 452"/>
+              </g>
+              <!-- drifting seeds / calm particles -->
+              <g fill="#F5EEDA" opacity=".7">
+                <circle cx="96" cy="120" r="2"/>
+                <circle cx="300" cy="90" r="1.6"/>
+                <circle cx="255" cy="140" r="1.3"/>
+                <circle cx="140" cy="70" r="1.4"/>
+              </g>
             </svg>
-            <span class="pcard__mono">AT</span>
           </div>
 
-          <figcaption class="pcard__caption">
-            <span class="pcard__name">Alice Tran</span>
-            <span class="pcard__cred">PMHNP-BC · FNP-BC</span>
-          </figcaption>
-
-          <!-- floating badges -->
+          <!-- floating credential badges -->
           <div class="pcard__badge pcard__badge--top">
             <span class="pcard__badge-num">15+</span>
             <span class="pcard__badge-label">years<br/>caring</span>

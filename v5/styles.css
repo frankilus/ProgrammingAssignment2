@@ -337,35 +337,6 @@ ul, ol { list-style: none; padding: 0; margin: 0; }
 }
 .pcard:hover .pcard__frame { transform: rotate(0); }
 .pcard__art { width: 100%; height: 100%; object-fit: cover; }
-.pcard__mono {
-  position: absolute;
-  top: 1rem; left: 1.2rem;
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 1.6rem;
-  color: rgba(250, 245, 235, .85);
-  letter-spacing: .05em;
-}
-.pcard__caption {
-  position: absolute;
-  left: 1.25rem; bottom: 1.25rem;
-  color: var(--paper-soft);
-  display: grid;
-  gap: 2px;
-}
-.pcard__name {
-  font-family: var(--display);
-  font-size: 1.6rem;
-  letter-spacing: -0.01em;
-  line-height: 1.05;
-}
-.pcard__cred {
-  font-family: var(--sans);
-  font-size: .68rem;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  opacity: .85;
-}
 
 /* Behind-card decorative slab */
 .pcard::before {
